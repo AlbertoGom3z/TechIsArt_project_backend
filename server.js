@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 var FAVORITES_COLLECTION = 'favorites';
 
-var url = 'https://nameless-headland-69072.herokuapp.com/';
+var url = 'http://nameless-headland-69072.herokuapp.com/';
 // var url = 'mongodb://localhost:27017/techisart';
 mongodb.MongoClient.connect(process.env.MONGODB_URI || url, function (err, database) {
   if(err) {
