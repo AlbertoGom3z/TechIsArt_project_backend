@@ -17,7 +17,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 var FAVORITES_COLLECTION = 'favorites';
 
-var url = 'mongodb://localhost:27017/techisart';
+var url = 'https://nameless-headland-69072.herokuapp.com/';
+// var url = 'mongodb://localhost:27017/techisart';
 mongodb.MongoClient.connect(process.env.MONGODB_URI || url, function (err, database) {
   if(err) {
     console.log(err);
@@ -28,6 +29,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI || url, function (err, datab
 console.log("Database connection ready");
 
 var server = app.listen(process.env.PORT || 3000, function () {
+// var server = app.listen(process.env.PORT || 3000, function () {
   var port = server.address().port;// db = database;
     console.log("App now running on port", port);
   });
