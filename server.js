@@ -17,8 +17,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 var FAVORITES_COLLECTION = 'favorites';
 
-var url= 'mongodb://heroku_0g40271l:7uj0frptq2f2avi25qtdjdocli@ds013366.mlab.com:13366/heroku_0g40271l'
-
+var url=
+'mongodb://heroku_rl333wc3:isrsg2l0geh8dcjda0mf9r7oqc@ds029436.mlab.com:29436/heroku_rl333wc3'
 // var url = 'mongodb://localhost:27017/techisart';
 mongodb.MongoClient.connect(process.env.MONGODB_URI || url, function (err, database) {
   if(err) {
